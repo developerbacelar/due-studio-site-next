@@ -12,7 +12,7 @@ const nextConfig = {
       },
     ],
   },
-  target: 'serverless',
+  optimizeFonts: true,
   distDir: 'build',
   
 }
