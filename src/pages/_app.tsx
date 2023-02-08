@@ -1,6 +1,14 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import FacebookPixel from "@/components/Pixel/Facebook";
+import type { AppProps } from "next/app";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }: AppProps) {
+  return (
+    <>
+      <GoogleAnalytics />
+      <FacebookPixel/>
+      <Component {...pageProps} />
+    </>
+  );
 }
+export default MyApp;

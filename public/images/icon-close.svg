@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 27.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0{clip-path:url(#SVGID_00000144296225777267809520000003435250407201322142_);}
+	.st1{fill:none;stroke:#9A999E;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="24" height="24"/>
+	</defs>
+	<clipPath id="SVGID_00000036241840954911096680000016790505564500827036_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g id="close_icon" style="clip-path:url(#SVGID_00000036241840954911096680000016790505564500827036_);">
+		<path id="Caminho_25" class="st1" d="M3.1,21.4l9.1-9.1 M21.4,3.1l-9.1,9.1 M12.2,12.3L3.1,3.1 M12.2,12.3l9.1,9.1"/>
+	</g>
+</g>
+</svg>
