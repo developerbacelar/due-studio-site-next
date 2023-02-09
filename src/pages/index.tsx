@@ -29,7 +29,7 @@ export default function Home() {
         <BeneficiosSection />
         <ModalidadesSection />
         <EstruturaSection />
-        {/* <DepoimentosSection / */}
+        <DepoimentosSection/>
         <Footer />
         <ButtonWhatsApp />
       </main>

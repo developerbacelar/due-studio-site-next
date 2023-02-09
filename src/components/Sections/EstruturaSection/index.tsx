@@ -20,7 +20,7 @@ const roboto = Roboto({
 
 const EstruturaSectionDue = styled.section`
         text-align: center;
-        margin: 100px auto 150px;
+        margin: 100px auto 0;
     .fourth-section-wrapper-due-studio{
         max-width: 1148px;
         padding: 0 30px;
@@ -117,7 +117,7 @@ const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     arrows: true,
     responsive: [
         {

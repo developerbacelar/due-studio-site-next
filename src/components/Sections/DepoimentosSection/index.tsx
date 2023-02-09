@@ -18,7 +18,7 @@ const roboto = Roboto({
 
 const DepoimentosSectionDue = styled.section`
     text-align: center;
-    margin: 100px 0 48px;
+    margin: 100px 0 150px;
     .fifth-section-title-due-studio{
         color: #FF5E2b;
         font-family: "Roboto", sans-serif;
