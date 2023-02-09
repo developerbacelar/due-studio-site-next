@@ -119,7 +119,7 @@ const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: false,
+    autoplay: true,
     arrows: false,
 }
 
