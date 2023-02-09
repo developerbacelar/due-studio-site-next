@@ -86,6 +86,7 @@ const FirstSectionDue = styled.section`
                 overflow: hidden;
                 border-radius: 26px;
                 img {
+                    border-radius: 26px;
                     max-width: 100%;
                 }
     
