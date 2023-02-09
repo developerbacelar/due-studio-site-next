@@ -78,11 +78,10 @@ const EstruturaSectionDue = styled.section`
                     }
                 }
                 .slick-arrow{
-                    z-index: 1;
+                    z-index: 2;
                     &:before{
                         font-size: 50px;
                         color: #FF5E2B;
-                        z-index: 1;
                     }
                     &.slick-next{
                         right: -3px;
@@ -94,19 +93,6 @@ const EstruturaSectionDue = styled.section`
                         }
                     }
                 }
-
-                .slick-dots {
-                    bottom: 10px;
-                    li button:before {
-                        font-size: 10px;
-                        color: #999;
-                        opacity: 1;
-                    }
-                    li.slick-active button:before {
-                        color: #000;
-                    }
-                }
-                
             }
         }
     }
