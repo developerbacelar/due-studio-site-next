@@ -20,7 +20,7 @@ const roboto = Roboto({
 
 const EstruturaSectionDue = styled.section`
         text-align: center;
-        margin: 100px auto;
+        margin: 100px auto 150px;
     .fourth-section-wrapper-due-studio{
         max-width: 1148px;
         padding: 0 30px;
