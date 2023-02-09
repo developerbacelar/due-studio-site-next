@@ -169,7 +169,7 @@ const Menu = () => {
             <ul className="navbar-links">
                 <li><AnchorLink style={manrope.style} offset='120' href="#modalidades" className="menu-due-studio-item">Modalidades</AnchorLink></li>
                 <li><AnchorLink style={manrope.style} offset='120' href="#estrutura" className="menu-due-studio-item">Estrutura</AnchorLink></li>
-                {/* <li><AnchorLink style={manrope.style} offset='120' href="#depoimentos" className="menu-due-studio-item">Depoimentos</AnchorLink></li> */}
+                <li><AnchorLink style={manrope.style} offset='120' href="#depoimentos" className="menu-due-studio-item">Depoimentos</AnchorLink></li>
                 <li><AnchorLink style={manrope.style} offset='120' href="#localizacao" className="menu-due-studio-item">Localização</AnchorLink></li>
             </ul>
             <BurguerMenu    
@@ -183,7 +183,7 @@ const Menu = () => {
                 </div>
                 <AnchorLink onClick={closeMenu} style={manrope.style} offset='120' href="#modalidades" className="menu-due-studio-item">Modalidades</AnchorLink>
                 <AnchorLink onClick={closeMenu} style={manrope.style} offset='120' href="#estrutura" className="menu-due-studio-item">Estrutura</AnchorLink>
-                {/* <AnchorLink onClick={closeMenu} style={manrope.style} offset='120' href="#depoimentos" className="menu-due-studio-item">Depoimentos</AnchorLink> */}
+                <AnchorLink onClick={closeMenu} style={manrope.style} offset='120' href="#depoimentos" className="menu-due-studio-item">Depoimentos</AnchorLink>
                 <AnchorLink onClick={closeMenu} style={manrope.style} offset='120' href="#localizacao" className="menu-due-studio-item">Localização</AnchorLink>
                 <div className="menu-burguer-icon-list">
                     <a  href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental."><Image src="/icon-whatsapp.svg" alt="Ícone WhatsApp" width={46} height={46} /></a>
