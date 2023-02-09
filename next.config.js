@@ -3,15 +3,9 @@ const nextConfig = {
   
   reactStrictMode: true,
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'example.com',
-        port: '',
-        pathname: '/account123/**',
-      },
-    ],
+    unoptimized: true,
   },
+  optimizeFonts: true,
   distDir: 'build',
   
 }
