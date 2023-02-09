@@ -90,7 +90,7 @@ const FirstSectionDue = styled.section`
                     max-width: 100%;
                     max-height: 452px;
                     @media (max-width: 1024px){
-                        max-height: 280px;
+                        max-height: 220px;
                     }
                 }
     

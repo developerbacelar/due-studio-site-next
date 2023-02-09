@@ -61,6 +61,7 @@ const EstruturaSectionDue = styled.section`
                     img {
                         width: 100%;
                         height: inherit;
+                        border-radius: 26px;
                     }
                 }
     
@@ -91,6 +92,17 @@ const EstruturaSectionDue = styled.section`
                         @media (max-width: 768px){
                             left: -32px;
                         }
+                    }
+                }
+                .slick-dots {
+                    bottom: 10px;
+                    li button:before {
+                        font-size: 10px;
+                        color: #fff;
+                        opacity: 1;
+                    }
+                    li.slick-active button:before {
+                        color: #FF5E2B;
                     }
                 }
             }
@@ -130,10 +142,11 @@ const settings = {
         {
             breakpoint: 768,
             settings: {
+                dots: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 initialSlide: 0,
-                arrows: true
+                arrows: false
             }
         }
     ]
