@@ -8,7 +8,7 @@ const ButtonWhatsAppDue = styled.a`
     position: fixed;
     right: 15px;
     width: 70px;
-    z-index: 9;
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
