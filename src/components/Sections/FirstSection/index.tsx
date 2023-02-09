@@ -5,7 +5,7 @@ import ButtonDefault from "../../Button";
 import {Manrope} from '@next/font/google'
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import 'next/image'
+import Image from 'next/image'
 
 const manrope = Manrope({
     weight: ['500', '700', '800'],
@@ -88,6 +88,10 @@ const FirstSectionDue = styled.section`
                 img {
                     border-radius: 26px;
                     max-width: 100%;
+                    max-height: 452px;
+                    @media (max-width: 1024px){
+                        max-height: 280px;
+                    }
                 }
     
                 .slick-dots {
@@ -115,7 +119,7 @@ const settings = {
     slidesToShow: 1,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     arrows: false,
 }
 
@@ -133,19 +137,19 @@ const FirstSection = () => {
                     <div className="first-section-carousel">
                         <Slider {...settings}>
                             <div className='slide-img'>
-                                <img src="/foto1.webp" alt="Fachada Due" />
+                                <Image src="/foto1.webp" alt="Fachada Due" object-fit="contain"  width={678} height={452} />
                             </div>
                             <div className='slide-img'>
-                                <img src="/foto2.webp" alt="Estrutura 1" />
+                                <Image src="/foto2.webp" alt="Estrutura 1" object-fit="contain" width={678} height={452}/>
                             </div>
                             <div className='slide-img'>
-                                <img src="/foto3.webp" alt="Estrutura 2" />
+                                <Image src="/foto3.webp" alt="Estrutura 2" object-fit="contain" width={678} height={452}/>
                             </div>
                             <div className='slide-img'>
-                                <img src="/foto4.webp" alt="Estrutura 3" />
+                                <Image src="/foto4.webp" alt="Estrutura 3" object-fit="contain" width={678} height={452}/>
                             </div>
                             <div className='slide-img'>
-                                <img src="/foto5.webp" alt="Estrutura 4" />
+                                <Image src="/foto5.webp" alt="Estrutura 4" object-fit="contain" width={678} height={452}/>
                             </div>
                         </Slider>
                     </div>

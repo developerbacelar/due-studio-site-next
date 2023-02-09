@@ -97,6 +97,7 @@ const ReviewsDue = styled.div`
         &:before {
             font-size: 50px;
             color: #FF5E2B;
+            z-index: 1;
         }
 
         &.slick-next {

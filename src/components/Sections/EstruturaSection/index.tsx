@@ -82,6 +82,7 @@ const EstruturaSectionDue = styled.section`
                     &:before{
                         font-size: 50px;
                         color: #FF5E2B;
+                        z-index: 1;
                     }
                     &.slick-next{
                         right: -3px;
@@ -169,7 +170,7 @@ function EstruturaSection() {
                     <div className="first-section-carousel">
                         <Slider {...settings}>
                             <div className='slide-img'>
-                                <Image src="/img-studio1.webp" alt="Fachada Due" width={376} height={280}/>
+                                <Image src="/img-studio1.webp" alt="Fachada Due" width={300} height={280}/>
                             </div>
                             <div className='slide-img'>
                                 <Image src="/img-studio2.webp" alt="Estrutura 1" width={376} height={280}/>

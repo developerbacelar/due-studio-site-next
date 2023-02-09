@@ -107,21 +107,20 @@ const FooterDue = styled.footer`
 
         .footer-google-maps-due-studio {
             width: 100%;
-            .mapouter {
-                position: relative;
-                text-align: right;
-                width: 100%;
-                height: 363px;
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    width: 100%;
-                    height: 363px;
-                }
-    
-                .gmap_iframe {
-                    height: 363px !important;
-                }
+            .mapouter{
+                position:relative;
+                text-align:right;
+                width:100%;
+                height:363px;
+            }
+            .gmap_canvas {
+                overflow:hidden;
+                background:none!important;
+                width:100%;
+                height:363px;
+            }
+            .gmap_iframe {
+                height:363px!important;
             }
 
         }
@@ -147,7 +146,7 @@ function Footer(){
                 <div className="footer-google-maps-due-studio">
                     <div className="mapouter">
                         <div className="gmap_canvas">
-                            <iframe className="gmap_iframe" width="100%" src="https://maps.google.com/maps?width=572&amp;height=363&amp;hl=en&amp;q=R. Heitor de Andrade, 138&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                            <iframe className="gmap_iframe" width="{100}" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} src="https://maps.google.com/maps?width=725&height=363&hl=en&q=R.%20Heitor%20de%20Andrade%20138%20Jardim%20das%20Américas%20Curitiba-PR&t=&z=14&ie=UTF8&iwloc=B&output=embed" />
                         </div>
                     </div>
                 </div>
