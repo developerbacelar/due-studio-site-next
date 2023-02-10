@@ -64,7 +64,7 @@ const FirstSectionDue = styled.section`
                 font-size: 1.250em;
                 margin: 15px 0 30px;
                 line-height: 125%;
-                max-width: 278px;
+                max-width: 380px;
             }
             .first-section-button-due-studio{
                 text-transform: uppercase;
@@ -130,7 +130,7 @@ const FirstSection = () => {
             <div className="first-section-wrapper-due-studio">
                 <div className="first-section-left-due-studio" style={manrope.style}>
                     <h1 className="first-section-title-due-studio">Studio de Pilates & Treinamento Funcional</h1>
-                    <span className="first-section-subtitle-due-studio">Faça um treino completo e alcance seus objetivos!</span>
+                    <span className="first-section-subtitle-due-studio">Melhore o seu condicionamento físico, emagreça e tenha um atendimento personalizado nas nossas aulas!</span>
                     <ButtonDefault classComponent="first-section-button-due-studio" titleButton="agende aula experimental" />
                 </div>
                 <div className="first-section-right-due-studio">
