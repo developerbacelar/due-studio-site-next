@@ -103,7 +103,7 @@ const Card = (props:any) => (
         <Image src={props.icon} alt={`Ícone ${props.title}`} width={48} height={64} title={`Ícone ${props.title}`} />
         <h4 style={manrope.style}>{props.title}</h4>
         <p style={manrope.style}>{props.description}</p>
-        <a style={manrope.style} href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental.">{props.linkText} <b>&#8594;</b></a>
+        <a style={manrope.style} href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental.">{props.linkText}<b>&#8594;</b></a>
     </li>
 );
 
