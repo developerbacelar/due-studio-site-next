@@ -7,6 +7,7 @@ import ModalidadesSection from '@/components/Sections/ModalidadesSection';
 import EstruturaSection from '@/components/Sections/EstruturaSection';
 import DepoimentosSection from '@/components/Sections/DepoimentosSection';
 import Footer from '@/components/Sections/Footer';
+import 'next/image'
 import ButtonWhatsApp from '@/components/ButtonWhatsApp';
 import GoogleAnalyticsScript from '@/components/Scripts';
 
@@ -19,6 +20,7 @@ export default function Home() {
         <title>Due Studio Personal</title>
         <meta name="description" content="Studio de Pilates & Treinamento Funcional" />
         <meta property="og:locale" content="pt_BR"/>
+        <meta property="og:image" content="/Due-Logo.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <GoogleAnalyticsScript/>
