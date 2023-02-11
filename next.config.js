@@ -7,21 +7,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  rewrites: [
-    {
-      source: '/',
-      destination: 'https://maps.googleapis.com/maps/api/place/details/json'
-    } 
-  ],
   optimizeFonts: true,
   distDir: 'build',
-  serverMiddleware: [
-    createProxyMiddleware("/api", {
-      target: "https://maps.googleapis.com/maps/api/place/details/json",
-      changeOrigin: true,
-      pathRewrite: { "^/api": "" },
-    }),
-  ],
 };
 
 module.exports = nextConfig;

@@ -83,7 +83,7 @@ const ReviewsDue = styled.div`
                 color: #1B1C31;
                 font-size: 22px;
                 line-height: 150%;
-                max-height: 250px;
+                min-height: 250px;
                 max-width: 504px;
                 overflow: hidden;
                 text-align: left;
@@ -102,14 +102,18 @@ const ReviewsDue = styled.div`
 
         &.slick-next {
             right: -3px;
+            width: 50px;
+            height: 50px;
             @media (max-width: 989px){
-                right: 8px;
+                right: -16px;
                 top: 140px;
             }
         }
         
         &.slick-prev {
             left: -16px;
+            width: 50px;
+            height: 50px;
             @media (max-width: 989px){
                 top: 140px;
             }
@@ -128,6 +132,25 @@ const ReviewsDue = styled.div`
         li.slick-active button:before {
             color: #000;
         }
+    }
+    .loader {
+        border: 8px solid #000;
+        border-top: 8px solid #FF5E2B;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+        margin: 0 auto;
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    .loading-message{
+        margin-top: 15px;
+        font-size: 1em;
+        font-weight: bold;
     }
 `
 
@@ -172,7 +195,7 @@ const Reviews: React.FC = () => {
             {error && <div>{error}</div>}
             {reviews.length > 0 ? (
                 <Slider {...settings}>
-                    {reviews.map((review, index) => (
+                    {reviews.filter(review => review.text.length <= 200).map((review, index) => (
                         <div key={index}>
                             <div className='review-item'>
                                 <div className='review-box-img'>
@@ -188,19 +211,21 @@ const Reviews: React.FC = () => {
                                             <img src="/icon-star.svg" key={i} alt={i.toString()} />
                                         ))}
                                     </div>
-                                    <p className='review-comment'>
-                                        {review.text.length > 308 ? `${review.text.slice(0, 308)}...` : review.text}
-                                    </p>
+                                    <p className='review-comment'>{review.text}</p>
                                 </div>
                             </div>
                         </div>
                     ))}
                 </Slider>
             ) : (
-                <div>Loading reviews...</div>
+                <>
+                    <div className='loader'></div>
+                    <p style={manrope.style} className='loading-message'>Carregando Reviews Aguarde...</p>
+                </>
             )}
         </ReviewsDue>
     );
+
 };
 
 export default Reviews;
