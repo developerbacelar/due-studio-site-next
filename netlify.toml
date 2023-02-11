@@ -1,6 +1,12 @@
 [[plugins]]
-package = "@netlify/plugin-nextjs"
+    package = "@netlify/plugin-nextjs"
 
 [build]
-command = "yarn next build"
-publish = "build"
+    command = "yarn next build"
+    publish = "build"
+
+[[redirects]]
+    from = "/api/google-places"
+    to = ".netlify/functions/google-places"
+    status = 200
+    force = true

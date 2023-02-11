@@ -175,39 +175,36 @@ const Reviews = () => {
         fetchData();
     }, []);
 
-    if (!reviews) {
-        return null;
-    } else {
-        return (
-            <ReviewsDue style={manrope.style}>
-                <Slider {...settings}>
-                    {reviews.map((review, index) => (
-                        <div key={index}>
-                            <div className='review-item'>
-                                <div className='review-box-img'>
-                                    <img className='review-img' src={review.profile_photo_url} alt={review.author_name} />
-                                    <span className='review-author-name'>{review.author_name}</span>
+
+    return (
+        <ReviewsDue style={manrope.style}>
+            <Slider {...settings}>
+                {reviews.map((review, index) => (
+                    <div key={index}>
+                        <div className='review-item'>
+                            <div className='review-box-img'>
+                                <img className='review-img' src={review.profile_photo_url} alt={review.author_name} />
+                                <span className='review-author-name'>{review.author_name}</span>
+                            </div>
+                            <div className='review-information'>
+                                <span className='review-icon-aspas'>
+                                    <img src="/icon-aspas.svg" alt="Ícone Aspas" />
+                                </span>
+                                <div className='review-stars'>
+                                    {[...Array(review.rating)].map((_, i) => (
+                                        <img src="/icon-star.svg" key={i} alt={i.toString()} />
+                                    ))}
                                 </div>
-                                <div className='review-information'>
-                                    <span className='review-icon-aspas'>
-                                        <img src="/icon-aspas.svg" alt="Ícone Aspas" />
-                                    </span>
-                                    <div className='review-stars'>
-                                        {[...Array(review.rating)].map((_, i) => (
-                                            <img src="/icon-star.svg" key={i} alt={i.toString()} />
-                                        ))}
-                                    </div>
-                                    <p className='review-comment'>
-                                        {review.text.length > 308 ? `${review.text.slice(0, 308)}...` : review.text}
-                                    </p>
-                                </div>
+                                <p className='review-comment'>
+                                    {review.text.length > 308 ? `${review.text.slice(0, 308)}...` : review.text}
+                                </p>
                             </div>
                         </div>
-                    ))}
-                </Slider>
-            </ReviewsDue>
-        );
-    }
+                    </div>
+                ))}
+            </Slider>
+        </ReviewsDue>
+    );
 };
 
 export default Reviews;
