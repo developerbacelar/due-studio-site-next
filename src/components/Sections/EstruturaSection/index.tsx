@@ -80,12 +80,14 @@ const EstruturaSectionDue = styled.section`
                 }
                 .slick-arrow{
                     z-index: 2;
+                    width: 50px;
+                    height: 50px;
                     &:before{
                         font-size: 50px;
                         color: #FF5E2B;
                     }
                     &.slick-next{
-                        right: -3px;
+                        right: -32px;
                     }
                     &.slick-prev{
                         left: -16px;
@@ -142,11 +144,11 @@ const settings = {
         {
             breakpoint: 768,
             settings: {
-                dots: true,
+                dots: false,
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 initialSlide: 0,
-                arrows: false
+                arrows: true
             }
         }
     ]
