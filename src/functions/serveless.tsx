@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-exports.handler = async (event: any, context: any) => {
+module.exports.handler = async (event: any, context: any) => {
     try {
         const response = await axios.get('https://maps.googleapis.com/maps/api/place/details/json', {
             params: {
