@@ -131,15 +131,6 @@ const ReviewsDue = styled.div`
     }
 `
 
-
-
-
-const API_KEY = 'AIzaSyBRwipvrr7uwxfl4JQQL4xpfXIMYuw4GVk';
-const BUSINESS_ID = 'ChIJBTsJxPPl3JQRcdS0C8oKMsA';
-const url = `https://maps.googleapis.com/maps/api/place/details/json?placeid=${BUSINESS_ID}&key=${API_KEY}`;
-// const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-
-
 const settings = {
     dots: false,
     infinite: true,
@@ -151,24 +142,24 @@ const settings = {
     arrows: true,
 };
 
-type Review = {
+interface Review {
     author_name: string;
     profile_photo_url: string;
     rating: number;
     text: string;
 };
 
-const Reviews = () => {
+const Reviews: React.FC = () => {
     const [reviews, setReviews] = useState<Review[]>([]);
+    const [error, setError] = useState('');
 
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`${url}`);
-                console.log(url)
-                setReviews(response.data.result.reviews);
-            } catch (error) {
-                console.error(error);
+                const response = await axios.get<{ reviews: Review[] }>('/api/reviews');
+                setReviews(response.data.reviews);
+            } catch (error: any) {
+                setError(error.response?.data.message || error.message);
             }
         };
 
@@ -178,31 +169,36 @@ const Reviews = () => {
 
     return (
         <ReviewsDue style={manrope.style}>
-            <Slider {...settings}>
-                {reviews.map((review, index) => (
-                    <div key={index}>
-                        <div className='review-item'>
-                            <div className='review-box-img'>
-                                <img className='review-img' src={review.profile_photo_url} alt={review.author_name} />
-                                <span className='review-author-name'>{review.author_name}</span>
-                            </div>
-                            <div className='review-information'>
-                                <span className='review-icon-aspas'>
-                                    <img src="/icon-aspas.svg" alt="Ícone Aspas" />
-                                </span>
-                                <div className='review-stars'>
-                                    {[...Array(review.rating)].map((_, i) => (
-                                        <img src="/icon-star.svg" key={i} alt={i.toString()} />
-                                    ))}
+            {error && <div>{error}</div>}
+            {reviews.length > 0 ? (
+                <Slider {...settings}>
+                    {reviews.map((review, index) => (
+                        <div key={index}>
+                            <div className='review-item'>
+                                <div className='review-box-img'>
+                                    <img className='review-img' src={review.profile_photo_url} alt={review.author_name} />
+                                    <span className='review-author-name'>{review.author_name}</span>
                                 </div>
-                                <p className='review-comment'>
-                                    {review.text.length > 308 ? `${review.text.slice(0, 308)}...` : review.text}
-                                </p>
+                                <div className='review-information'>
+                                    <span className='review-icon-aspas'>
+                                        <img src="/icon-aspas.svg" alt="Ícone Aspas" />
+                                    </span>
+                                    <div className='review-stars'>
+                                        {[...Array(review.rating)].map((_, i) => (
+                                            <img src="/icon-star.svg" key={i} alt={i.toString()} />
+                                        ))}
+                                    </div>
+                                    <p className='review-comment'>
+                                        {review.text.length > 308 ? `${review.text.slice(0, 308)}...` : review.text}
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            ) : (
+                <div>Loading reviews...</div>
+            )}
         </ReviewsDue>
     );
 };

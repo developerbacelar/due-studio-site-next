@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../Button";
 import styled from "styled-components";
 import {Manrope, Roboto} from '@next/font/google'
-import Reviews from "@/components/Reviews";
+import ReviewsGoogle from "@/components/ReviewsGoogle";
 
 const manrope = Manrope({
     weight: ['500', '700', '800'],
@@ -61,8 +61,7 @@ function DepoimentosSection() {
         <DepoimentosSectionDue id="depoimentos" className="fifth-section-due-studio">
             <span className="fifth-section-title-due-studio" style={roboto.style}>Depoimentos</span>
             <h3 className="fifth-sub-title-section-due-studio" style={manrope.style}>O que nossos clientes estão dizendo</h3>
-            {/* <ReviewsGoogle/> */}
-            <Reviews/>
+            <ReviewsGoogle/>
             <h4 className="fifth-sub-title-section-due-studio" style={manrope.style}>Ficou com alguma dúvida?</h4>
             <p className="fifth-section-text-due-studio" style={manrope.style}>
                 Fale conosco no Whatsapp!

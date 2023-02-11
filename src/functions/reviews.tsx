@@ -6,7 +6,8 @@ module.exports.handler = async (event: any, context: any) => {
             params: {
                 place_id: 'ChIJBTsJxPPl3JQRcdS0C8oKMsA',
                 fields: 'review',
-                key: 'AIzaSyBRwipvrr7uwxfl4JQQL4xpfXIMYuw4GVk'
+                key: 'AIzaSyBRwipvrr7uwxfl4JQQL4xpfXIMYuw4GVk',
+                language: 'pr-BR'
             },
         });
 

@@ -19,10 +19,10 @@ export default async function handler(
       params: {
         place_id: 'ChIJBTsJxPPl3JQRcdS0C8oKMsA',
         fields: 'review',
-        key: 'AIzaSyBRwipvrr7uwxfl4JQQL4xpfXIMYuw4GVk'
+        key: 'AIzaSyBRwipvrr7uwxfl4JQQL4xpfXIMYuw4GVk',
       },
     });
-
+    res.setHeader('Content-Language', 'pt-BR');
     res.status(200).json({ reviews: response.data.result.reviews });
   } catch (error: any) {
     res.status(error.response.status).json({ message: error.response.statusText });
