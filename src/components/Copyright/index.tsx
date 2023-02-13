@@ -27,7 +27,7 @@ const Copy = styled.p`
 function Copyright() {
     return (
         <Copy style={manrope.style}>
-             <strong>Due Personal Studio &#169; 2023.</strong> <br/> <span> <strong>Desenvolvido por <a className="creator-link" href="https://github.com/developerbacelar">Marco A Bacelar</a>.</strong></span> 
+             <strong>&#169; Copyright Due Personal Studio 2023</strong> <br/> <span> <strong>Desenvolvido por <a className="creator-link" href="https://github.com/developerbacelar">Marco A Bacelar</a>. Todos os direitos reservados.</strong></span> 
              
         </Copy>
     )
