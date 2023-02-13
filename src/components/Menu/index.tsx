@@ -71,7 +71,7 @@ const MenuDue = styled.div`
                 }
                 a{
                     position: relative;
-                    margin-left: 30px;
+                    margin-right: 30px;
                     font-size: 0.825em;
                 }
             }
@@ -189,6 +189,7 @@ const Menu = () => {
                     <a  href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental."><Image src="/icon-whatsapp.svg" alt="Ícone WhatsApp" width={46} height={46} /></a>
                     <a  href="https://www.facebook.com/duepersonal"><Image src="/icon-facebook.svg" alt="Ícone Facebook" width={46} height={46}/></a>
                     <a  href="https://www.instagram.com/due_personal/"><Image src="icon-instagram.svg" alt="Ícone INstagram" width={46} height={46}/></a>
+                    <a href="https://www.youtube.com/@due_personal"><Image src="icon-youtube.svg" alt="Ícone YouTube" width={46} height={46} /></a>
                 </div>
                 
             </BurguerMenu>

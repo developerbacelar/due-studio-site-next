@@ -2,6 +2,7 @@ import React from "react";
 import Image from 'next/image';
 import styled from "styled-components";
 import { Manrope, Roboto } from '@next/font/google'
+import Copyright from "@/components/Copyright";
 
 const manrope = Manrope({
     weight: ['500', '700', '800'],
@@ -17,7 +18,7 @@ const roboto = Roboto({
 
 const FooterDue = styled.footer`
     background-color: #F6DFB7;
-    padding: 40px 0;
+    padding: 40px 0 10px;
     display: block;
     position: relative;
     width: 100%;
@@ -43,7 +44,7 @@ const FooterDue = styled.footer`
     .footer-wrapper-due-studio {
         display: flex;
         align-items: center;
-        margin: 0 auto;
+        margin: 0 auto 30px;
         max-width: 1148px;
         padding: 0 30px;
         @media (max-width: 989px){
@@ -101,7 +102,7 @@ const FooterDue = styled.footer`
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                max-width: 180px;
+                max-width: 250px;
                 @media (max-width: 989px){
                     max-width: 100%;
                     margin-bottom: 30px;
@@ -159,7 +160,8 @@ function Footer() {
                     <ul className="footer-social-list-due-studio">
                         <li className="footer-social-item-due-studio"><a href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental."><Image src="/icon-whatsapp.svg" alt="Ícone WhatsApp" width={46} height={46} /></a></li>
                         <li className="footer-social-item-due-studio"><a href="https://www.facebook.com/duepersonal"><Image src="/icon-facebook.svg" alt="Ícone Facebook" width={46} height={46} /></a></li>
-                        <li className="footer-social-item-due-studio"><a href="https://www.instagram.com/due_personal/"><Image src="icon-instagram.svg" alt="Ícone INstagram" width={46} height={46} /></a></li>
+                        <li className="footer-social-item-due-studio"><a href="https://www.instagram.com/due_personal/"><Image src="icon-instagram.svg" alt="Ícone Instagram" width={46} height={46} /></a></li>
+                        <li className="footer-social-item-due-studio"><a href="https://www.youtube.com/@due_personal"><Image src="icon-youtube.svg" alt="Ícone YouTube" width={46} height={46} /></a></li>
                     </ul>
                 </div>
                 <div className="footer-google-maps-due-studio">
@@ -170,6 +172,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
+            <Copyright/>
         </FooterDue>
     )
 }

@@ -22,6 +22,12 @@ const HeaderDue = styled.header`
         margin: 0 auto;
         max-width: 1148px;
         position: relative;
+        @media (max-width: 768px){
+            .logo-due{
+                position: absolute;
+                top: 0;
+            }
+        }
     }
 
 `

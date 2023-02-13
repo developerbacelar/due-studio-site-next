@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "next/image";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const LogoDue = styled.img`
     width: 60px;
@@ -14,7 +15,9 @@ const LogoDue = styled.img`
     }
 `
 const Logo = () => (
-    <LogoDue src="/D-icon.svg" alt="Logo Due Studio" title="Logo Due Studio" />
+    <AnchorLink offset='94' href="#principal" className="logo-due">
+        <LogoDue src="/D-icon.svg" alt="Logo Due Studio" title="Logo Due Studio" />
+    </AnchorLink>
 )
 
 export default Logo;

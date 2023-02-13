@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Slider from 'react-slick';
 import ButtonDefault from "../../Button";
-import {Manrope} from '@next/font/google'
+import {Manrope} from '@next/font/google';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from 'next/image'
@@ -126,7 +126,7 @@ const settings = {
 
 const FirstSection = () => {
     return (
-        <FirstSectionDue>
+        <FirstSectionDue id="principal">
             <div className="first-section-wrapper-due-studio">
                 <div className="first-section-left-due-studio" style={manrope.style}>
                     <h1 className="first-section-title-due-studio">Studio de Pilates & Treinamento Funcional</h1>
