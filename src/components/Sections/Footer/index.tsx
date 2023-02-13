@@ -115,6 +115,8 @@ const FooterDue = styled.footer`
                         display: block;
                         height: 46px;
                         width: 46px;
+                        background-color: #fff;
+                        border-radius: 50%;
 
                         img {
                             width: inherit;
