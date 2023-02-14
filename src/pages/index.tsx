@@ -21,6 +21,7 @@ export default function Home() {
         <title>Due Studio Personal</title>
         <meta name="description" content="Studio de Pilates & Treinamento Funcional" />
         <meta property="og:locale" content="pt_BR"/>
+        <meta name="facebook-domain-verification" content="awiem274di0wam3fwq0s0ldpzqfg87" />
         <meta property="og:image" content="/Due-Logo.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
