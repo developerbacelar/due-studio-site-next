@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^4.30.4",
+    "@next/bundle-analyzer": "^13.1.6",
     "@next/font": "^13.1.6",
     "@types/gtag.js": "^0.0.12",
     "@types/node": "18.11.19",

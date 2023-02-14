@@ -27,7 +27,7 @@ const Copy = styled.p`
 function Copyright() {
     return (
         <Copy style={manrope.style}>
-             <strong>&#169; Copyright Due Personal Studio 2023</strong> <br/> <span> <strong>Desenvolvido por <a className="creator-link" href="https://github.com/developerbacelar">Marco A Bacelar</a>. Todos os direitos reservados.</strong></span> 
+             <strong>&#169; Copyright Due Personal Studio 2023</strong> <br/> <span> <strong>Design por <a className="creator-link" href="https://www.linkedin.com/in/thaisfogaca/">Thaís Fogaça</a>.</strong></span> <br/><span> <strong>Desenvolvido por <a className="creator-link" href="https://www.linkedin.com/in/marco-aurelio-bacelar-737065102/">Marco A Bacelar</a>. Todos os direitos reservados.</strong></span>
              
         </Copy>
     )
