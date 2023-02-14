@@ -37,6 +37,7 @@ const CardListDue = styled.div`
             margin-top: 20px;
             @media (max-width: 768px){
                 text-align: center;
+                order: 2;
             }
             img{
                 margin-bottom: 15px;
@@ -77,6 +78,7 @@ const CardListDue = styled.div`
                 position: relative;
                 @media (max-width: 768px){
                     margin: 30px 0;
+                    order: 1;
                 }
                 span{
                     position: absolute;
