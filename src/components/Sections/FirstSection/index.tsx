@@ -137,19 +137,19 @@ const FirstSection = () => {
                     <div className="first-section-carousel">
                         <Slider {...settings}>
                             <div className='slide-img'>
-                                <Image src="/foto1.webp" alt="Fachada Due" sizes="(max-width: 768px) 298vw 220vh" object-fit="contain"  width={678} height={452} />
-                            </div>
-                            <div className='slide-img'>
                                 <Image src="/foto2.webp" alt="Estrutura 1" sizes="(max-width: 768px) 298vw 220vh" object-fit="contain" width={678} height={452}/>
-                            </div>
-                            <div className='slide-img'>
-                                <Image src="/foto3.webp" alt="Estrutura 2" sizes="(max-width: 768px) 298vw 220vh" object-fit="contain" width={678} height={452}/>
                             </div>
                             <div className='slide-img'>
                                 <Image src="/foto4.webp" alt="Estrutura 3" sizes="(max-width: 768px) 298vw 220vh" object-fit="contain" width={678} height={452}/>
                             </div>
                             <div className='slide-img'>
                                 <Image src="/foto5.webp" alt="Estrutura 4" sizes="(max-width: 768px) 298vw 220vh" object-fit="contain" width={678} height={452}/>
+                            </div>
+                            <div className='slide-img'>
+                                <Image src="/foto3.webp" alt="Estrutura 2" sizes="(max-width: 768px) 298vw 220vh" object-fit="contain" width={678} height={452}/>
+                            </div>
+                            <div className='slide-img'>
+                                <Image src="/foto1.webp" alt="Fachada Due" sizes="(max-width: 768px) 298vw 220vh" object-fit="contain"  width={678} height={452} />
                             </div>
                         </Slider>
                     </div>

@@ -10,6 +10,7 @@ import Footer from '@/components/Sections/Footer';
 import 'next/image'
 import ButtonWhatsApp from '@/components/ButtonWhatsApp';
 import GoogleAnalyticsScript from '@/components/Scripts';
+import FacebookPixel from '@/components/Pixel/Facebook';
 
 
 
@@ -35,6 +36,7 @@ export default function Home() {
         <DepoimentosSection/>
         <Footer />
         <ButtonWhatsApp />
+        <FacebookPixel/>
       </main>
     </>
   )
