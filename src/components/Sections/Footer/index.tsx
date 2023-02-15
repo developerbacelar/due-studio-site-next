@@ -26,7 +26,7 @@ const FooterDue = styled.footer`
     &:after{
         content: "";
         position: absolute;
-        top: -130px;
+        top: -140px;
         background-image: url(../../images/bg-waves-footer.svg);
         background-repeat: no-repeat;
         background-position: top;
