@@ -25,7 +25,21 @@ export default function Home() {
         <meta property="og:image" content="/Due-Logo.png"/>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
-        <GoogleAnalyticsScript/>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-V13SF9CK3X`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-V13SF9CK3X');
+            `,
+          }}
+        />
       </Head>
       <Reset />
       <main>

@@ -169,7 +169,7 @@ function Footer() {
                 <div className="footer-google-maps-due-studio">
                     <div className="mapouter">
                         <div className="gmap_canvas">
-                            <iframe className="gmap_iframe" width="{100}" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} src="https://maps.google.com/maps?width=725&height=363&hl=en&q=R.%20Heitor%20de%20Andrade%20138%20Jardim%20das%20Américas%20Curitiba-PR&t=&z=14&ie=UTF8&iwloc=B&output=embed" />
+                            <iframe className="gmap_iframe" width="{100}" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} src="https://maps.google.com/maps?libraries=geometry,places&width=725&height=363&hl=en&q=R.%20Heitor%20de%20Andrade%20138%20Jardim%20das%20Américas%20Curitiba-PR&t=&z=14&ie=UTF8&iwloc=B&output=embed" />
                         </div>
                     </div>
                 </div>

@@ -11,6 +11,7 @@ const FacebookPixel = () => {
             />
             <noscript>
                 <img
+                    alt="Facebook"
                     height="1"
                     width="1"
                     src="https://www.facebook.com/tr?id=979156676388455&ev=PageView&noscript=1"
