@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-V13SF9CK3X`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-PHN9ZVZ042`}
         />
         <script
           dangerouslySetInnerHTML={{
@@ -36,7 +36,7 @@ export default function Home() {
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'G-V13SF9CK3X');
+              gtag('config', 'G-PHN9ZVZ042');
             `,
           }}
         />
