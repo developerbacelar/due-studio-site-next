@@ -9,10 +9,7 @@ import DepoimentosSection from '@/components/Sections/DepoimentosSection';
 import Footer from '@/components/Sections/Footer';
 import 'next/image'
 import ButtonWhatsApp from '@/components/ButtonWhatsApp';
-import GoogleAnalyticsScript from '@/components/Scripts';
 import FacebookPixel from '@/components/Pixel/Facebook';
-
-
 
 export default function Home() {
   return (
@@ -20,38 +17,38 @@ export default function Home() {
       <Head>
         <title>Due Studio Personal</title>
         <meta name="description" content="Studio de Pilates & Treinamento Funcional" />
-        <meta property="og:locale" content="pt_BR"/>
+        <meta property="og:locale" content="pt_BR" />
         <meta name="facebook-domain-verification" content="awiem274di0wam3fwq0s0ldpzqfg87" />
-        <meta property="og:image" content="/Due-Logo.png"/>
+        <meta property="og:image" content="/Due-Logo.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        {/* Código do Google Analytics */}
         <script
           async
-          src={`https://www.googletagmanager.com/gtag/js?id=G-PHN9ZVZ042`}
-        />
+          src="https://www.googletagmanager.com/gtag/js?id=PHN9ZVZ042"
+        ></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-
-              gtag('config', 'G-PHN9ZVZ042');
-            `,
+              gtag('config', 'PHN9ZVZ042');
+            `
           }}
         />
       </Head>
       <Reset />
       <main>
         <Header />
-        <FirstSection/>
+        <FirstSection />
         <BeneficiosSection />
         <ModalidadesSection />
         <EstruturaSection />
-        <DepoimentosSection/>
+        <DepoimentosSection />
         <Footer />
         <ButtonWhatsApp />
-        <FacebookPixel/>
+        <FacebookPixel />
       </main>
     </>
   )
