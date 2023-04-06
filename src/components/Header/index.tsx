@@ -37,7 +37,7 @@ const Header = () => (
         <nav className="nav-due-studio">
             <Logo />
             <Menu />
-            <ButtonDefault titleButton="Fale Conosco" />
+            <ButtonDefault titleButton="Fale Conosco" btnId="btn-fale-conosco"/>
         </nav>
     </HeaderDue>
 )

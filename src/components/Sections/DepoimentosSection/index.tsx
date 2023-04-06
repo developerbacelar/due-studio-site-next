@@ -66,7 +66,7 @@ function DepoimentosSection() {
             <p className="fifth-section-text-due-studio" style={manrope.style}>
                 Fale conosco no Whatsapp!
             </p>
-            <Button classComponent="button-default-due-studio" titleButton="(41) 99125-6464"/>
+            <Button classComponent="button-default-due-studio" btnId="btn-telefone"titleButton="(41) 99125-6464"/>
         </DepoimentosSectionDue>
     )
 }

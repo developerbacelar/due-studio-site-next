@@ -131,7 +131,7 @@ const FirstSection = () => {
                 <div className="first-section-left-due-studio" style={manrope.style}>
                     <h1 className="first-section-title-due-studio">Studio de Pilates & Treinamento Funcional</h1>
                     <span className="first-section-subtitle-due-studio">Melhore o seu condicionamento físico, emagreça e tenha um atendimento personalizado nas nossas aulas!</span>
-                    <ButtonDefault classComponent="first-section-button-due-studio" titleButton="agende aula experimental" />
+                    <ButtonDefault classComponent="first-section-button-due-studio" btnId="btn-agende-aula-experimental-1" titleButton="agende aula experimental" />
                 </div>
                 <div className="first-section-right-due-studio">
                     <div className="first-section-carousel">

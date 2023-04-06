@@ -31,7 +31,7 @@ const DefaultButton = styled.a`
 ` 
 
 const ButtonDefault = (props : any) => (
-    <DefaultButton style={manrope.style} className={props.classComponent} href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental.">
+    <DefaultButton style={manrope.style} className={props.classComponent} id={props.btnId} href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental.">
         {props.titleButton}
     </DefaultButton>
 )

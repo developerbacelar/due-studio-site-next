@@ -105,7 +105,7 @@ const Card = (props:any) => (
         <Image src={props.icon} alt={`Ícone ${props.title}`} width={48} height={64} title={`Ícone ${props.title}`} />
         <h4 style={manrope.style}>{props.title}</h4>
         <p style={manrope.style}>{props.description}</p>
-        <a style={manrope.style} href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental.">{props.linkText}<b>&#8594;</b></a>
+        <a style={manrope.style} id={props.btnId} href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental.">{props.linkText}<b>&#8594;</b></a>
     </li>
 );
 
@@ -114,7 +114,8 @@ Card.propTypes = {
     description: PropTypes.string.isRequired,
     icon: PropTypes.string.isRequired,
     linkText: PropTypes.string.isRequired,
-    isExclusive: PropTypes.bool
+    isExclusive: PropTypes.bool,
+    btnId: PropTypes.string.isRequired
 };
 
 Card.defaultProps = {
@@ -129,6 +130,7 @@ const CardsList = () => (
                 description="O Pilates proporciona benefícios para todas as idades, pois com essa modalidade o aluno fica mais forte, flexível e consciente sobre seu corpo, com menos dores e outros benefícios!"
                 icon="/icon-pilates.svg"
                 linkText="Agende agora"
+                btnId="btn-agende-agora-card-pilates"
             />
             <Card
                 title="Método DUE"
@@ -136,12 +138,14 @@ const CardsList = () => (
                 icon="/icon-metododue.svg"
                 linkText="Agende agora"
                 isExclusive
+                btnId="btn-agende-agora-card-metodo-due"
             />
             <Card
                 title="Treinamento Funcional"
                 description="O Treinamento Funcional é focado em aperfeiçoar a aptidão física e auxiliar no processo de emagrecimento. Aqui no Studio Due, o treino é constantemente modificado, para que sempre seja um novo desafio para os nossos alunos."
                 icon="/icon-funcional.svg"
                 linkText="Agende agora"
+                btnId="btn-agende-agora-card-treinamento-funcional"
             />
         </ul>
     </CardListDue>
