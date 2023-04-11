@@ -1,14 +1,13 @@
 /* eslint-disable @typescript-eslint/camelcase */
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
+  compress: false,
   images: {
     unoptimized: true,
   },
   optimizeFonts: true,
   distDir: 'build',
-};
-
-module.exports = nextConfig;
+  trailingSlash: true,
+}

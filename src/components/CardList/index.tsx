@@ -2,7 +2,8 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
 import Image from 'next/image';
-import {Manrope} from '@next/font/google'
+import { Manrope } from '@next/font/google'
+import { getHref } from "@/utils/util";
 
 const manrope = Manrope({
     weight: ['500', '700', '800'],
@@ -99,15 +100,23 @@ const CardListDue = styled.div`
 
 `
 
-const Card = (props:any) => (
-    <li className={`third-section-cards-item-due-studio${props.isExclusive ? " exclusive" : ""}`}>
-        {props.isExclusive && <span className="exclusive-label" style={manrope.style}>MÉTODO EXCLUSIVO</span>}
-        <Image src={props.icon} alt={`Ícone ${props.title}`} width={48} height={64} title={`Ícone ${props.title}`} />
-        <h4 style={manrope.style}>{props.title}</h4>
-        <p style={manrope.style}>{props.description}</p>
-        <a style={manrope.style} id={props.btnId} href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental.">{props.linkText}<b>&#8594;</b></a>
-    </li>
-);
+const Card = (props: any) => {
+
+    const href = getHref()
+
+    return (
+        <li className={`third-section-cards-item-due-studio${props.isExclusive ? " exclusive" : ""}`}>
+            {props.isExclusive && <span className="exclusive-label" style={manrope.style}>MÉTODO EXCLUSIVO</span>}
+            <Image src={props.icon} alt={`Ícone ${props.title}`} width={48} height={64} title={`Ícone ${props.title}`} />
+            <h4 style={manrope.style}>{props.title}</h4>
+            <p style={manrope.style}>{props.description}</p>
+            <a style={manrope.style} id={props.btnId} href={href}>{props.linkText}<b>&#8594;</b></a>
+        </li>
+
+    )
+
+}
+
 
 Card.propTypes = {
     title: PropTypes.string.isRequired,

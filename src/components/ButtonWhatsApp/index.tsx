@@ -1,6 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import styled from "styled-components";
+import { getHref } from "@/utils/util";
 
 const ButtonWhatsAppDue = styled.a`
     animation: heartbeat 1.5s ease-in-out infinite both;
@@ -86,11 +87,14 @@ const ButtonWhatsAppDue = styled.a`
 `
 
 function ButtonWhatsApp() {
-    return(
-        <ButtonWhatsAppDue className="btn-whatsapp-flutuante" id="btn-flutuante-whatsapp" href="https://api.whatsapp.com/send?phone=5541991256464&amp;text=Olá,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informações%20sobre%20uma%20futura%20aula%20experimental." target="_blank" rel="noopener">
-            <Image src="/icon-whatsapp-logo.svg" alt="Botão WhatsApp" width={150} height={100}/>
-        </ButtonWhatsAppDue>
-    )
+
+        const href = getHref()
+
+        return (
+                <ButtonWhatsAppDue className="btn-whatsapp-flutuante" id="btn-flutuante-whatsapp" href={href} target="_blank" rel="noopener">
+                        <Image src="/icon-whatsapp-logo.svg" alt="Botão WhatsApp" width={150} height={100} />
+                </ButtonWhatsAppDue>
+        )
 }
 
 export default ButtonWhatsApp;

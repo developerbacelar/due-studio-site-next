@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styled from "styled-components";
 import { Manrope, Roboto } from '@next/font/google'
 import Copyright from "@/components/Copyright";
+import { getHref } from "@/utils/util";
 
 const manrope = Manrope({
     weight: ['500', '700', '800'],
@@ -151,6 +152,9 @@ const FooterDue = styled.footer`
 
 
 function Footer() {
+
+    const href = getHref()
+
     return (
         <FooterDue id="localizacao">
             <div className="footer-wrapper-due-studio">
@@ -158,12 +162,12 @@ function Footer() {
                     <span className="footer-section-title-due-studio" style={roboto.style}>Localização</span>
                     <h5 className="footer-title-due-studio" style={manrope.style}>Venha nos visitar! <Image src="/icon-localizacao.svg" alt="Icone Local" width={40} height={54} /></h5>
                     <p className="footer-adress-due-studio" style={manrope.style}>R. Heitor de Andrade, 138 <br /> Jardim das Américas<br /> Curitiba-PR</p>
-                    <p className="footer-open-and-close-due-studio" style={manrope.style}>De segunda à sexta-feira <br /> Das 6h às 21h30 <br/> E sábado das 8h às 12h</p>
+                    <p className="footer-open-and-close-due-studio" style={manrope.style}>De segunda à sexta-feira <br /> Das 6h às 21h30 <br /> E sábado das 8h às 12h</p>
                     <ul className="footer-social-list-due-studio">
-                        <li className="footer-social-item-due-studio"><a href="https://api.whatsapp.com/send?phone=5541991256464&text=Ol%C3%A1,%20vim%20pelo%20seu%20site!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20uma%20futura%20aula%20experimental." id="btn-footer-whatsapp"><Image src="/icon-whatsapp.svg" alt="Ícone WhatsApp" width={46} height={46} /></a></li>
+                        <li className="footer-social-item-due-studio"><a href={href} id="btn-footer-whatsapp"><Image src="/icon-whatsapp.svg" alt="Ícone WhatsApp" width={46} height={46} /></a></li>
                         <li className="footer-social-item-due-studio"><a href="https://www.facebook.com/duepersonal" id="btn-footer-facebook"><Image src="/icon-facebook.svg" alt="Ícone Facebook" width={46} height={46} /></a></li>
-                        <li className="footer-social-item-due-studio"><a href="https://www.instagram.com/due_personal/" id="btn-footer-instagram"><Image src="icon-instagram.svg" alt="Ícone Instagram" width={46} height={46} /></a></li>
-                        <li className="footer-social-item-due-studio"><a href="https://www.youtube.com/@due_personal" id="btn-footer-youtube"><Image src="icon-youtube.svg" alt="Ícone YouTube" width={46} height={46} /></a></li>
+                        <li className="footer-social-item-due-studio"><a href="https://www.instagram.com/due_personal/" id="btn-footer-instagram"><Image src="/icon-instagram.svg" alt="Ícone Instagram" width={46} height={46} /></a></li>
+                        <li className="footer-social-item-due-studio"><a href="https://www.youtube.com/@due_personal" id="btn-footer-youtube"><Image src="/icon-youtube.svg" alt="Ícone YouTube" width={46} height={46} /></a></li>
                     </ul>
                 </div>
                 <div className="footer-google-maps-due-studio">
@@ -174,7 +178,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-            <Copyright/>
+            <Copyright />
         </FooterDue>
     )
 }
