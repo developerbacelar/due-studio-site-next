@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styled from "styled-components";
 import Image from 'next/image';
 import { Manrope } from '@next/font/google'
-import { getHref } from "@/utils/util";
+import { useHref } from "@/utils/util";
 
 const manrope = Manrope({
     weight: ['500', '700', '800'],
@@ -102,7 +102,7 @@ const CardListDue = styled.div`
 
 const Card = (props: any) => {
 
-    const href = getHref()
+    const href = useHref()
 
     return (
         <li className={`third-section-cards-item-due-studio${props.isExclusive ? " exclusive" : ""}`}>

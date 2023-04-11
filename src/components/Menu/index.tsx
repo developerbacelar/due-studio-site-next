@@ -6,7 +6,7 @@ import Logo from "../Logo";
 import ButtonDefault from "../Button";
 import Image from 'next/image';
 import { Manrope } from '@next/font/google'
-import { getHref } from "@/utils/util";
+import { useHref } from "@/utils/util";
 
 const manrope = Manrope({
     weight: ['500', '700', '800'],
@@ -165,7 +165,7 @@ const Menu = () => {
         setMenuOpen(false);
     };
 
-    const href = getHref()
+    const href = useHref()
 
     return (
         <MenuDue>

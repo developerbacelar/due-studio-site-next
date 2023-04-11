@@ -1,5 +1,5 @@
 import React from "react";
-import { getHref } from "@/utils/util";
+import { useHref } from "@/utils/util";
 import styled from "styled-components";
 import { Manrope } from '@next/font/google'
 
@@ -31,7 +31,7 @@ const DefaultButton = styled.a`
 
 const ButtonDefault = (props: any) => {
 
-    const href = getHref()
+    const href = useHref()
 
     return (
         <DefaultButton style={manrope.style} className={props.classComponent} id={props.btnId} href={href}>

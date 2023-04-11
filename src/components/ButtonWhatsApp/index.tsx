@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'next/image'
 import styled from "styled-components";
-import { getHref } from "@/utils/util";
+import { useHref } from "@/utils/util";
 
 const ButtonWhatsAppDue = styled.a`
     animation: heartbeat 1.5s ease-in-out infinite both;
@@ -88,7 +88,7 @@ const ButtonWhatsAppDue = styled.a`
 
 function ButtonWhatsApp() {
 
-        const href = getHref()
+        const href = useHref()
 
         return (
                 <ButtonWhatsAppDue className="btn-whatsapp-flutuante" id="btn-flutuante-whatsapp" href={href} target="_blank" rel="noopener">

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styled from "styled-components";
 import { Manrope, Roboto } from '@next/font/google'
 import Copyright from "@/components/Copyright";
-import { getHref } from "@/utils/util";
+import { useHref } from "@/utils/util";
 
 const manrope = Manrope({
     weight: ['500', '700', '800'],
@@ -153,7 +153,7 @@ const FooterDue = styled.footer`
 
 function Footer() {
 
-    const href = getHref()
+    const href = useHref()
 
     return (
         <FooterDue id="localizacao">
