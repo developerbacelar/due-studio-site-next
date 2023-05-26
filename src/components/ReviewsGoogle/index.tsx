@@ -192,7 +192,6 @@ const Reviews: React.FC = () => {
 
     return (
         <ReviewsDue style={manrope.style}>
-            {error && <div>{error}</div>}
             {reviews.length > 0 ? (
                 <Slider {...settings}>
                     {reviews.filter(review => review.text.length <= 200).map((review, index) => (
