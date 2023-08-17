@@ -53,6 +53,6 @@ export default async function handler(
 
     res.status(200).json({ reviews: translatedReviews });
   } catch (error: any) {
-    res.status(error.response.status).json({ message: '' });
+    res.status(error?.response?.status).json({ message: '' });
   }
 }
