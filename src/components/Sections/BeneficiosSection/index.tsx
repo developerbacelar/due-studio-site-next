@@ -97,7 +97,7 @@ function BeneficiosSection(){
                     </div>
                     <div className="second-section-due-studio-first-text">
                         <p>Atendimento personalizado</p>
-                        <span>Até 4 alunos por aula</span>
+                        <span>Até 5 alunos por aula</span>
                     </div>
                 </li>
                 <li className="second-section-item-due-studio">

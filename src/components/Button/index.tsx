@@ -10,7 +10,7 @@ const manrope = Manrope({
 })
 
 const DefaultButton = styled.a`
-    background-color: #ED7841;
+    background-color: #F86101;
     border-radius: 26px;
     color: #fff;
     cursor: pointer;
@@ -22,10 +22,14 @@ const DefaultButton = styled.a`
     width: fit-content;
     white-space: nowrap;
     &:hover{
-        background-color: #fb580c;
+        background-color: #ED7841;
     }
     @media (max-width: 768px){
         order: 3;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        height: 40px;
     }
 `
 

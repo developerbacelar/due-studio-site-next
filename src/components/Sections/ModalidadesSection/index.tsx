@@ -46,7 +46,7 @@ function ModalidadesSection(){
         <ModalidadesSectionDue id="modalidades">
             <span className="third-section-title-due-studio" style={roboto.style}>Modalidades</span>
             <h3 className="third-sub-title-section-due-studio" style={manrope.style}>Cuide da sua saúde e do seu bem-estar</h3>
-            <p className="third-section-text-due-studio" style={manrope.style}>No Studio Due atendemos no máximo 4 alunos por aula, dessa forma conseguimos
+            <p className="third-section-text-due-studio" style={manrope.style}>No Studio Due atendemos no máximo 5 alunos por aula, dessa forma conseguimos
                 <br/>
                 proporcionar um atendimento com mais exclusividade e segurança garantindo uma
                 <br/>

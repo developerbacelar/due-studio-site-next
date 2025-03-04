@@ -163,9 +163,9 @@ function EstruturaSection() {
                 <span className="fourth-section-title-due-studio" style={roboto.style}>Estrutura</span>
                 <h3 className="fourth-sub-title-section-due-studio" style={manrope.style}>Nosso Studio</h3>
                 <p className="fourth-section-text-due-studio" style={manrope.style}>
-                    A estrutura do nosso espaço está preparada e 
+                    O Método Due une os principais princípios e exercícios do Pilates de Aparelhos e 
                     <br />
-                    organizada para ajudar vocês a atingirem os seus objetivos!
+                    do Treinamento Funcional para otimizar seus resultados!
                 </p>
                 <div className="first-section-right-due-studio">
                     <div className="first-section-carousel">

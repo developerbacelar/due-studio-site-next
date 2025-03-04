@@ -17,7 +17,8 @@ export const useHref = () => {
     }
 
     const encodeMessage = encodeURI(message)
-    const href = `https://api.whatsapp.com/send?phone=5541991256464&text=${encodeMessage}`
+    // const href = `https://api.whatsapp.com/send?phone=5541991256464&text=${encodeMessage}`
+    const href = `https://tintim.link/whatsapp/38a34398-d03b-423e-982e-f807fe4d8a8f/a5c68c3d-3d49-44b2-99f3-e5146bcf6491`
 
     return href
   }, [router])

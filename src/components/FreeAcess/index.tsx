@@ -64,7 +64,7 @@ function FreeAcess(){
         <FreeAcessDue>
             <span className="third-section-free-acess-title-due-studio" style={manrope.style}>Primeira aula Grátis!</span>
             <p className="third-section-free-acess-text-due-studio" style={manrope.style}>Agende uma aula experimental grátis e conheça nosso espaço! <br/> Seja qual for seu objetivo, nós te ajudamos a conquistá-lo!</p>
-            <ButtonDefault classComponent="button-default-due-studio" btnId="btn-agende-aula-experimental-2" titleButton="agende aula experimental"/>
+            <ButtonDefault classComponent="button-default-due-studio" btnId="btn-agende-aula-experimental-2" titleButton="agende aula experimental grátis"/>
         </FreeAcessDue>
     )
 }

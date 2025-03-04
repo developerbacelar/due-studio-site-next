@@ -59,9 +59,9 @@ const DepoimentosSectionDue = styled.section`
 function DepoimentosSection() {
     return (
         <DepoimentosSectionDue id="depoimentos" className="fifth-section-due-studio">
-            {/* <span className="fifth-section-title-due-studio" style={roboto.style}>Depoimentos</span>
+            <span className="fifth-section-title-due-studio" style={roboto.style}>Depoimentos</span>
             <h3 className="fifth-sub-title-section-due-studio" style={manrope.style}>O que nossos clientes estão dizendo</h3>
-            <ReviewsGoogle/> */}
+            <ReviewsGoogle/>
             <h4 className="fifth-sub-title-section-due-studio" style={manrope.style}>Ficou com alguma dúvida?</h4>
             <p className="fifth-section-text-due-studio" style={manrope.style}>
                 Fale conosco no Whatsapp!
