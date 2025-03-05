@@ -161,7 +161,7 @@ function Footer() {
                 <div className="footer-left-due-studio">
                     <span className="footer-section-title-due-studio" style={roboto.style}>Localização</span>
                     <h5 className="footer-title-due-studio" style={manrope.style}>Venha nos visitar! <Image src="/icon-localizacao.svg" alt="Icone Local" width={40} height={54} /></h5>
-                    <p className="footer-adress-due-studio" style={manrope.style}>R. Câmara Junior, 530 <br /> Jardim das Américas<br /> Curitiba-PR</p>
+                    <p className="footer-adress-due-studio" style={manrope.style}>R. Professor João Doetzer, 103 <br /> Jardim das Américas<br /> Curitiba-PR</p>
                     <p className="footer-open-and-close-due-studio" style={manrope.style}>De segunda à sexta-feira <br /> Das 7h às 21h30 </p>
                     <ul className="footer-social-list-due-studio">
                         <li className="footer-social-item-due-studio"><a href={href} id="btn-footer-whatsapp"><Image src="/icon-whatsapp.svg" alt="Ícone WhatsApp" width={46} height={46} /></a></li>
@@ -173,7 +173,7 @@ function Footer() {
                 <div className="footer-google-maps-due-studio">
                     <div className="mapouter">
                         <div className="gmap_canvas">
-                            <iframe className="gmap_iframe" width="{100}" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.3499982223743!2d-49.2234853!3d-25.459986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce538a093ca2d%3A0x634a5e8b6353e33f!2sRua%20C%C3%A2mara%20Junior%2C%20530%20-%20Jardim%20das%20Am%C3%A9ricas%2C%20Curitiba%20-%20PR%2C%2082590-300!5e0!3m2!1spt-BR!2sbr!4v1692278077080!5m2!1spt-BR!2sbr" />
+                            <iframe className="gmap_iframe" width="{100}" frameBorder={0} scrolling="no" marginHeight={0} marginWidth={0} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3602.349579133116!2d-49.2237!3d-25.46!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce5f3c4093b05%3A0xc0320aca0bb4d471!2sDue%20Studio%20Personal!5e0!3m2!1spt-BR!2sbr!4v1741177371116!5m2!1spt-BR!2sbr" />
                         </div>
                     </div>
                 </div>
